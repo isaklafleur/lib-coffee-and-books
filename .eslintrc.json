@@ -1,6 +1,22 @@
 {
-    "extends": "airbnb-base",
-    "plugins": [
-        "import"
-    ]
+  "extends": "standard",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "google": true,
+    "axios": true
+  },
+  "rules": {
+    "space-before-function-paren": ["error", "never"],
+    "quotes": ["error", "double"],
+    "semi": [2, "always"],
+    "comma-dangle": ["error", "never"],
+    "space-in-parens": ["error", "never"],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-var": "error",
+    "prefer-const": "error",
+    "max-len": ["error", 120]
+  }
 }
