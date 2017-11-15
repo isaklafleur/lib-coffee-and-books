@@ -1,4 +1,4 @@
-$(document).ready(() => {
+document.addEventListener("DOMContentLoaded", () => {
   const ironhackBCN = {
     lat: 41.3977381,
     lng: 2.090471916

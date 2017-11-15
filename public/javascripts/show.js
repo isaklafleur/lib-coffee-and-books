@@ -1,4 +1,4 @@
-$(document).ready(() => {
+document.addEventListener("DOMContentLoaded", () => {
   const titleTag = document.getElementById("restaurantName");
   const url = `http://localhost:3000/api/${titleTag.dataset.id}`;
 

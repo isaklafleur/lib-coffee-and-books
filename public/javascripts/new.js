@@ -1,4 +1,4 @@
-$(document).ready(() => {
+document.addEventListener("DOMContentLoaded", () => {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 10,
     center: { lat: 41.3977381, lng: 2.090471916 }
