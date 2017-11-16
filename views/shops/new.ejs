@@ -8,28 +8,25 @@
 </head>
 
 <body>
-  <h3>Add new restaurant</h3>
+  <h3>Add New Shop</h3>
   <form method="POST" action="/">
-    <label>Name:</label>
     <input type="text" name="name" placeholder="Name" required>
-    <label for="">Description:</label>
     <input type="text" name="description" placeholder="Description">
-    <label>Address</label>
-    <input id="latitude" type="" name="latitude" placeholder="Latitude">
-    <input id="longitude" type="" name="longitude" placeholder="Longitude"> Type of Business:
-    <br>
-    <input type="radio" name='business' value='BOOKSTORE' required>BookStore
-    <br>
-    <input type="radio" name='business' value='COFFEESHOP'>Coffee Shop
-    <br>
-    <input id="address" type="text" name="address" placeholder="address">
+    <div>
+      <p>Type of Business:
+        <input type="radio" name='business' value='BOOKSTORE' required>BookStore
+        <input type="radio" name='business' value='COFFEESHOP'>Coffee Shop </p>
+    </div>
+    <input id="address" type="text" name="address" placeholder="Address"> Or fill in the coordinates
+    <input id="latitude" type="text" name="latitude" placeholder="Latitude">
+    <input id="longitude" type="text" name="longitude" placeholder="Longitude">
     <input id="submit" type="button" name="" value="Geocode">
-    <input type="submit">
+    <button type="submit">Add</button>
   </form>
   <div id="map"></div>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbBJPvYIaR5ozIx_0-uWiGeO9cK4IxHww"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
-  <script type="text/javascript" src="/javascripts/new.js"></script>
+  <script type="text/javascript" src="/javascripts/index.js"></script>
 </body>
 
 </html>

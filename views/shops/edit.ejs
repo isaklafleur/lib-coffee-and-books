@@ -8,28 +8,26 @@
 </head>
 
 <body>
-  <h3>Edit Restaurant</h3>
+  <h3>Edit Shop</h3>
   <form method="POST" action="/<%=shop._id%>">
-    <label>Name:</label>
     <input type="" name="name" value="<%= shop.name %>" placeholder="Name" required>
-    <label>Description:</label>
     <input type="" name="description" value="<%= shop.description %>" placeholder="Description">
-    <label>Address</label>
-    <input id="latitude" type="" name="latitude" value="<%= shop.location.coordinates[1] %>" placeholder="Latitude">
-    <input id="longitude" type="" name="longitude" value="<%= shop.location.coordinates[0] %>" placeholder="Longitude"> Type of Business:
-    <br>
-    <input type="radio" name='business' value='BOOKSTORE' required>BookStore
-    <br>
-    <input type="radio" name='business' value='COFFEESHOP'>Coffee Shop
-    <br>
-    <input type="submit" name="">
+    <div>
+      <p>Type of Business:
+        <input type="radio" name="business" value="BOOKSTORE" required>BookStore
+        <input type="radio" name="business" value="COFFEESHOP">Coffee Shop</p>
+    </div>
+    <input id="address" type="" name="address" placeholder="Address"> Or fill in the coordinates
+    <input id="latitude" type="text" name="latitude" value="<%= shop.location.coordinates[1] %>" placeholder="Latitude">
+    <input id="longitude" type="text" name="longitude" value="<%= shop.location.coordinates[0] %>" placeholder="Longitude">
+    <input id="submit" type="button" name="" value="Geocode">
+    <button type="submit">Edit</button>
+
   </form>
-  <input id="address" type="" name="address" placeholder="address">
-  <input id="submit" type="submit" name="" value="Geocode">
   <div id="map"></div>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbBJPvYIaR5ozIx_0-uWiGeO9cK4IxHww"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
-  <script type="text/javascript" src="/javascripts/new.js"></script>
+  <script type="text/javascript" src="/javascripts/index.js"></script>
 </body>
 
 </html>
